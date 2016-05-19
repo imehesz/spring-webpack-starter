@@ -6,3 +6,6 @@
 *.1
 config/
 users/
+*.swp
+node-modules/*
+node/*
