@@ -9,3 +9,4 @@ users/
 *.swp
 node_modules
 node
+bundle*.*
