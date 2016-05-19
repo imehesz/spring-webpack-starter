@@ -1,5 +1,3 @@
-$(document).ready(function() {
-  $('[data-toggle=offcanvas]').click(function() {
-    $('.row-offcanvas').toggleClass('active');
-  });
-});
+// kicking things off
+require("./tags/web-app.tag.html");
+require("riot").mount("web-app");

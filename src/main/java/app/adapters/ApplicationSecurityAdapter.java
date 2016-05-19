@@ -39,6 +39,7 @@ public class ApplicationSecurityAdapter extends WebSecurityConfigurerAdapter {
         .antMatchers("/img/**").permitAll()
         .antMatchers("/images/**").permitAll()
         .antMatchers("/fonts/**").permitAll()
+        .antMatchers("/deploy/**").permitAll()
         .anyRequest().authenticated()
         .and()
             .formLogin().loginPage("/login").failureUrl("/login?error").permitAll()

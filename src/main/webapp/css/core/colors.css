@@ -1,0 +1,3 @@
+@define-mixin color.mainTitle { color: brown; }
+@define-mixin color.link { color: #1199ff; }
+@define-mixin color.background {background-color: orange; }

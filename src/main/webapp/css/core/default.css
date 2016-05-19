@@ -1,0 +1,12 @@
+body {
+  @mixin color.background;
+}
+
+a {
+  @mixin color.link;
+  display: flex;
+}
+
+h1 {
+  @mixin color.mainTitle;
+}
