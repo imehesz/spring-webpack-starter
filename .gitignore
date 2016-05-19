@@ -1,0 +1,8 @@
+/target/
+.classpath
+.project
+.settings/
+*.log
+*.1
+config/
+users/
