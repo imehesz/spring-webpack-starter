@@ -1,25 +1,24 @@
-Simple starter app for Spring MVC (using spring boot)
+Simple starter app for Spring MVC (using spring boot) and WebPack
+=================================================================
 
-I could not find any simple barebone starter apps that had a working authentication system, orm, and ready to go. 
+Based on
+-
 
-Every example out there is bloated with a lot of unnecessary code.
+
+Spring Starter https://github.com/ddalcu/spring-starter (Java)
+
+Frontend Maven Plugin https://github.com/eirslett/frontend-maven-plugin (NodeJS)
+
+YAWPAR https://github.com/imehesz/YAWPAR (SPA, WebPack, Babel, PostCSS, RiotJS)
+
+
+Usage
+-
 
 To run, just clone it then..
 
     mvn spring-boot:run   (or run Application.java within eclipse)
+    
+You should see the sample page at http://localhost:8080/spa/main
 
-
-
-Uses thymeleaf for templating, I find this template engine very easy to use and outputs clean html with error checking.
-H2 or Mysql for DB, configure it via application.properties
-
-
-Features:
-
-* User Registration
-* User Activation via e-mail link
-* Password Reset via e-mail link
-* User Admin when ROLE_ADMIN
-* Edit Profile
-* Upload Profile Picture
-* Admins can login as other users using "Login As" link in the user editor.
+Enjoy
