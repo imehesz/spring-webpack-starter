@@ -1,8 +1,7 @@
 var debug = process.env.NODE_ENV !== "production";
 
-var autoprefixer    = require("autoprefixer");
 var postcssImport   = require("postcss-import");
-var postcssMixins   = require("postcss-mixins");
+var postcssCssNext  = require("postcss-cssnext");
 
 var webpack         = require('webpack');
 var context         = __dirname + "/src/main/webapp";
@@ -57,6 +56,10 @@ module.exports = {
   
     
   postcss: function() {
-    return [postcssImport, postcssMixins, autoprefixer];
+    return [postcssImport, postcssCssNext];
+  },
+
+  devServer: {
+    contentBase: "./"
   }
 };
